@@ -1,5 +1,9 @@
 import os
-import pandas as pd
+
+from .__version__ import getVersion
+
+PKG_VERSION = getVersion()
+UA = f'espywrapper/{PKG_VERSION}'
 
 def getCredentials():
     email = os.environ.get('ES_URL')

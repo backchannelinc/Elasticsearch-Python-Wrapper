@@ -4,7 +4,7 @@ import requests
 import pandas as pd
 
 from .const import *
-from .utils import getCredentials
+from .utils import *
 
 from elasticsearch import Elasticsearch, helpers
 
