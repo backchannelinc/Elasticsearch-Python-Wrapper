@@ -1,5 +1,9 @@
 # Elasticsearch-Python-Wrapper
+The best way to query Elasticsearch with SQL.
+
 Python package for querying Elasticsearch databases, optimized for SQL querying and dataframe usage.
+
+Includes ability for scrolling through results over 10K (the Elasticsearch default).
 
 Getting started is as easy as:
 ```
