@@ -10,12 +10,5 @@ setup(
       author='@backchannelre',
       author_email='developers@backchannel.re',
       url='https://github.com/backchannelinc/Elasticsearch-Python-Wrapper',
-      install_requires=[
-        'certifi',
-        'requests',
-        'urllib3',
-        'pandas',
-        'elasticsearch'
-      ],
       packages=['espywrapper']
 )
