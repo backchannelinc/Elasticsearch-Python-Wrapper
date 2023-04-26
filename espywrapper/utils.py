@@ -9,6 +9,3 @@ def getCredentials():
         return (email, password)
     else:
         return (None , None)
-    
-def resultsToDataFrame(results):
-    return pd.DataFrame(results[1], columns=results[0])
