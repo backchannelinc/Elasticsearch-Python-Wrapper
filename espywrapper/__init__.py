@@ -7,6 +7,8 @@ from .utils import *
 
 from elasticsearch import Elasticsearch, helpers
 
+__version__ = '1.1.0'
+
 class EsPyWrapperResult:
     def __init__(self, results: dict = None):
         self.results = results
@@ -67,8 +69,8 @@ class EsPyWrapper:
     DATAFRAME_CONTAINER = None
 
     def __init__(self):
-        self.PACKAGE_VERSION = PKG_VERSION
-        self.USER_AGENT = UA
+        self.PACKAGE_VERSION = __version__
+        self.USER_AGENT = f'espywrapper/{self.PACKAGE_VERSION}'
         
         self.ES_URL, self.ES_APIKEY = getCredentials()
         
