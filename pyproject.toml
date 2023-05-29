@@ -1,3 +1,7 @@
 [build-system]
-requires = ["setuptools"]
+requires = [
+    "setuptools",
+    "elasticsearch",
+    "pandas"
+]
 build-backend = "setuptools.build_meta"
