@@ -7,7 +7,7 @@ from .utils import *
 
 from elasticsearch import Elasticsearch, helpers
 
-__version__ = '1.2.0'
+__version__ = '1.2.1'
 
 class EsPyWrapperResult:
     def __init__(self, results: dict = None):
@@ -214,8 +214,8 @@ class EsPyWrapper:
                     json={'cursor': cursor}
                 )
                 results['rows'] += r.json()['rows']
-                if 'cursor' in list(r.json()['rows'].keys()):
-                    cursor = r.json()['rows']['cursor']
+                if 'cursor' in list(r.json().keys()):
+                    cursor = r.json()['cursor']
                 else:
                     cursor = None
 
