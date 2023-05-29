@@ -7,7 +7,7 @@ from .utils import *
 
 from elasticsearch import Elasticsearch, helpers
 
-__version__ = '1.1.0'
+__version__ = '1.2.0'
 
 class EsPyWrapperResult:
     def __init__(self, results: dict = None):
